@@ -1,9 +1,18 @@
 git init -로컬 저장소 설정
 touch a.txt
 git add a.txt -staging area에 저장
-(git add .)
+git add . -현재 디렉토리 전체 add
 git status
-git rm --cahed a.txt
-git cmmit -m "first commit" -staging area에 기록
+git rm --cached a.txt
+git commit -m "first commit" -staging area에 기록
 code .
 git log
+git log --online
+git restore --staged
+
+git config --global -l
+git config --global user.email()
+git config --global user.name()
+
+working directory - staging area - repository
+                  git add         git commit
